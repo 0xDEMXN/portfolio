@@ -1,7 +1,6 @@
 "use client"
 
 import { Project } from "@/types/project"
-import { AnimatePresence } from "framer-motion"
 import Card from "@/components/Card/Card"
 import { useState } from "react"
 import ExtendedCard from "@/components/ExtendedCard/ExtendedCard"
@@ -14,7 +13,7 @@ const CardsWrapper = () => {
       title: "Wasan Project",
       excerpt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget feugiat lorem. Donec mattis, est at porttitor finibus, tellus turpis interdum leo, non sagittis quam arcu nec dolor. Pellentesque sodales felis quis ante viverra sodales. Sed elementum, ante id congue placerat, enim lorem gravida odio, a tristique magna augue ut elit. In tincidunt velit ac odio auctor, sit amet lacinia diam porta. Integer in nisl augue. Proin suscipit, sapien sed dapibus ullamcorper, ante lectus malesuada lectus, et gravida nisl neque vitae odio. Donec pharetra, elit ut interdum ultricies, diam sapien facilisis leo, eu condimentum dolor ipsum sit amet turpis.",
-      image: "/Wasan.jpeg",
+      image: "/Wasan.jpg",
       link: "https://wasan.sayitsimple.it/",
     },
     {
@@ -23,7 +22,7 @@ const CardsWrapper = () => {
       title: "Google",
       excerpt: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget feugiat lorem. Donec mattis, est at porttitor finibus, tellus turpis interdum leo, non sagittis quam arcu nec dolor. Pellentesque sodales felis quis ante viverra sodales. Sed elementum, ante id congue placerat, enim lorem gravida odio, a tristique magna augue ut elit. In tincidunt velit ac odio auctor, sit amet lacinia diam porta. Integer in nisl augue. Proin suscipit, sapien sed dapibus ullamcorper, ante lectus malesuada lectus, et gravida nisl neque vitae odio. Donec pharetra, elit ut interdum ultricies, diam sapien facilisis leo, eu condimentum dolor ipsum sit amet turpis.",
-      image: "/Google.jpeg",
+      image: "/Google.jpg",
       link: "https://www.google.com",
     },
   ]
