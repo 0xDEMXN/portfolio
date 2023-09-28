@@ -9,7 +9,7 @@ const Cards = (
 ) => {
   return (
       <motion.div layoutId={project.slug} className={styles.card} onClick={() => onSelectedProject(project)}>
-        <Image src={project.image} alt="" width={500} height={200} />
+        <Image src={project.image} alt="" width={800} height={600} />
         <div className={styles.cardDetails}>
           <h2 className="mb-3">{ project.title }</h2>
           <p>{ project.excerpt }</p>
