@@ -3,7 +3,7 @@ import styles from './card.module.css'
 import { motion } from 'framer-motion'
 import Image from "next/image"
 
-const Cards = (
+const Card = (
   {project, onSelectedProject}:
   {project: Project, onSelectedProject: (project: Project) => void}
 ) => {
@@ -18,4 +18,4 @@ const Cards = (
   )
 }
 
-export default Cards
+export default Card
