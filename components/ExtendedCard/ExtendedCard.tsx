@@ -4,11 +4,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLink, faTimesCircle } from "@fortawesome/free-solid-svg-icons"
 import { motion } from 'framer-motion'
 import Image from "next/image"
+import { useEffect } from "react"
 
 const Card = (
   {project, onProjectClose}:
   {project: Project, onProjectClose: () => void}
 ) => {
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onProjectClose();
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  });
+  
   return (
     <div className="fixed inset-0 p-6 overflow-y-auto bg-black/50" onClick={onProjectClose}>
       <motion.div
