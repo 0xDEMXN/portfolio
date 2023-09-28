@@ -1,7 +1,7 @@
 .card {
   border: 2px solid black;
   margin-bottom: 10px;
-  cursor: url('/cursor.png'), auto;
+  cursor: url('/cursor.png') 50 50, auto;
   background-color: #fff;
   box-shadow: 3px 3px #000;
 }

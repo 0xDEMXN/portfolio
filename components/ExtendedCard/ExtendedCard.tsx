@@ -10,10 +10,10 @@ const Card = (
   {project: Project, onProjectClose: () => void}
 ) => {
   return (
-    <div className="fixed inset-0 bg-black/50 flex justify-center" onClick={onProjectClose}>
+    <div className="fixed inset-0 p-6 overflow-y-auto bg-black/50" onClick={onProjectClose}>
       <motion.div
         layoutId={project.slug} 
-        className="max-w-4xl w-11/12 py-12 overflow-y-scroll"
+        className="max-w-4xl mx-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <div className={styles.card}>
