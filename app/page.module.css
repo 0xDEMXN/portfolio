@@ -1,0 +1,15 @@
+.enterButton {
+  font-size: 1.5rem;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.welcome p {
+  margin-top: 10px
+}
