@@ -1,24 +1,19 @@
 .card {
   border: 2px solid black;
-  margin-bottom: 10px;
-  cursor: url('/cursor.png'), auto;
   box-shadow: 3px 3px #000;
-}
-
-.card:hover {
-  box-shadow: 4px 4px #000;
-  margin: -1px 1px 11px -1px;
+  position: relative;
 }
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 500px;
   object-fit: cover;
 }
 
 .cardDetails {
   padding: 20px;
   background-color: #fff;
+  height: 100%;
 }
 
 .cardDetails h2 {
@@ -27,4 +22,10 @@
 
 .cardDetails p {
   margin-bottom: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }

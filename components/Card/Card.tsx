@@ -1,22 +1,20 @@
 import { Project } from "@/types/project"
 import styles from './card.module.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons"
+import { motion } from 'framer-motion'
+import Image from "next/image"
 
 const Cards = (
-  {project}:
-  {project: Project}
+  {project, onSelectedProject}:
+  {project: Project, onSelectedProject: (project: Project) => void}
 ) => {
   return (
-      <div className={styles.card}>
-        <img src={project.image} alt="" />
+      <motion.div layoutId={project.slug} className={styles.card} onClick={() => onSelectedProject(project)}>
+        <Image src={project.image} alt="" width={500} height={200} />
         <div className={styles.cardDetails}>
-          <h2>{project.title}</h2>
-          <p>{ project.description }</p>
-          
-          <a href={project.link} target="_blank" rel="noopener noreferrer">visita il sito web <FontAwesomeIcon icon={faExternalLink} /> </a>  
+          <h2 className="mb-3">{ project.title }</h2>
+          <p>{ project.excerpt }</p>
         </div>
-      </div>
+      </motion.div>
   )
 }
 
