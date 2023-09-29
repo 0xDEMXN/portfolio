@@ -12,8 +12,14 @@ const Home = () => {
         <h1 className="font-bold">Demetrio Montalto</h1>
 
         <Button className={styles.enterButton} path='./portfolio'>sfoglia i miei progetti</Button>
-        
+
         <p>
+          <a href="https://github.com/0xDEMXN/portfolio" target="_blank" rel="noopener noreferrer">codice sorgente</a>
+        </p>
+
+        <p>
+          puoi trovarmi su:
+          <br />
           <a href="https://github.com/0xDEMXN/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} /> github
           </a> &mdash; <a href="https://linkedin.com/in/demetriomontalto" target="_blank" rel="noopener noreferrer">
@@ -21,6 +27,7 @@ const Home = () => {
           </a>
         </p>
       </Container>
+
     </main>
   );
 }
