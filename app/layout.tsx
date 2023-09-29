@@ -1,4 +1,4 @@
-import './globals.css'
+import '@/styles/globals.scss'
 import type { Metadata } from 'next'
 import { Kanit } from 'next/font/google'
 import { config } from '@fortawesome/fontawesome-svg-core'

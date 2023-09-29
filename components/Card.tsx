@@ -1,5 +1,5 @@
 import { Project } from "@/types/project"
-import styles from './card.module.css'
+import styles from '@/styles/modules/Card.module.scss'
 import { motion } from 'framer-motion'
 import Image from "next/image"
 

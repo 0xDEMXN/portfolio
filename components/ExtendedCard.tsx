@@ -1,5 +1,5 @@
 import { Project } from "@/types/project"
-import styles from './extendedcard.module.css'
+import styles from '@/styles/modules/ExtendedCard.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLink, faTimesCircle } from "@fortawesome/free-solid-svg-icons"
 import { motion } from 'framer-motion'

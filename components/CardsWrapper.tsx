@@ -1,9 +1,9 @@
 "use client"
 
 import { Project } from "@/types/project"
-import Card from "@/components/Card/Card"
+import Card from "@/components/Card"
 import { useEffect, useState } from "react"
-import ExtendedCard from "@/components/ExtendedCard/ExtendedCard"
+import ExtendedCard from "@/components/ExtendedCard"
 
 const CardsWrapper = () => {
   const [ selectedProject, setSelectedProject ] = useState<Project | null>(null)

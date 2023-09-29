@@ -1,6 +1,6 @@
-import styles from "./page.module.css";
-import Button from "@/components/Button/Button";
-import Container from "@/components/Layout/Container";
+import styles from '@/styles/modules/Home.module.scss';
+import Button from "@/components/Button";
+import Container from "@/components/Container";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 

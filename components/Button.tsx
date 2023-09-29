@@ -1,6 +1,6 @@
 'use client';
 import { useRouter } from "next/navigation";
-import styles from './button.module.css';
+import styles from '@/styles/modules/Button.module.scss'
 
 const Button = (
   { children, path, className }: 

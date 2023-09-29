@@ -1,6 +1,6 @@
-import Container from "@/components/Layout/Container"
-import GoBack from "@/components/GoBack/GoBack"
-import CardsWrapper from "@/components/CardsWrapper/CardsWrapper"
+import Container from "@/components/Container"
+import GoBack from "@/components/GoBack"
+import CardsWrapper from "@/components/CardsWrapper"
 
 export default function Portfolio() {
   return (
