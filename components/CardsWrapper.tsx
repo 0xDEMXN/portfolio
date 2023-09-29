@@ -12,7 +12,7 @@ const CardsWrapper = () => {
   useEffect(() => {
     fetch('/api/projects')
       .then(response => response.json())
-      .then(projects => setProjects(projects.data))
+      .then(projects => setProjects(projects.data.reverse()))
       .catch(error => console.error(error))
   }, [])
 

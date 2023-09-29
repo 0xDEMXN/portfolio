@@ -8,6 +8,7 @@ export default function Portfolio() {
       <Container>
         <GoBack />
         <h1 className="font-bold">progetti</h1>
+        <span>⚠️ questa pagina non è ancora completa, ritorna tra un po&apos; di tempo per vedere tutti i progetti a cui ho lavorato ⚠️</span>
 
         <CardsWrapper />
       </Container>
