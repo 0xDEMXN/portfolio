@@ -28,7 +28,7 @@ const Card = (
         onClick={(e) => e.stopPropagation()}
       >
         <div className={styles.card}>
-          <Image src={project.image} alt="" width={1920} height={1080} />
+          <Image src={project.image} alt={project.title} width={1920} height={1080} />
           <div className={styles.cardDetails}>
             <button className={`${styles.close} text-3xl`} onClick={onProjectClose}><FontAwesomeIcon icon={faTimesCircle} /></button>
             <h2 className="mb-3">{ project.title }</h2>
