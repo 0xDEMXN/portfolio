@@ -1,16 +1,16 @@
 .button {
-  @apply px-5 py-1;
+  padding: 0.25em 1.25em;
   border: 2px solid black;
   margin-bottom: 10px;
   box-shadow: 6px 6px #000;
-}
 
-.button:hover {
-  box-shadow: 7px 7px #000;
-  margin: -1px 1px 11px -1px;
-}
+  &:hover {
+    box-shadow: 7px 7px #000;
+    margin: -1px 1px 11px -1px;
+  }
 
-.button:active {
-  box-shadow: 2px 2px #000;
-  margin: 4px -4px 6px 4px;
+  &:active {
+    box-shadow: 2px 2px #000;
+    margin: 4px -4px 6px 4px;
+  }
 }
