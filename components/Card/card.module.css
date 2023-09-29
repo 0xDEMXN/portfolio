@@ -3,11 +3,11 @@
   margin-bottom: 10px;
   cursor: url('/cursor.png') 50 50, auto;
   background-color: #fff;
-  box-shadow: 3px 3px #000;
+  box-shadow: 6px 6px #000;
 }
 
 .card:hover {
-  box-shadow: 4px 4px #000;
+  box-shadow: 7px 7px #000;
   margin: -1px 1px 11px -1px;
 }
 
