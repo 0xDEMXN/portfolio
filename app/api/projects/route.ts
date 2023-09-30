@@ -1,7 +1,7 @@
 import { Project } from "@/types/project"
 
 export async function GET() {
-  const projects: Project[] = [
+  const data: Project[] = [
     {
       id: 1,
       slug: "wearesum",
@@ -13,5 +13,5 @@ export async function GET() {
     },
   ]
  
-  return Response.json({ projects })
+  return Response.json({ data })
 }
