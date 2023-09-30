@@ -34,7 +34,11 @@ const Card = (
             <h2 className="mb-3">{ project.title }</h2>
             <p>{ project.content }</p>
             
-            <a href={project.link} target="_blank" rel="noopener noreferrer">visita il sito web <FontAwesomeIcon icon={faExternalLink} /> </a>  
+            {
+              project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer">visita il sito web <FontAwesomeIcon icon={faExternalLink} /> </a>  
+              )
+            }
           </div>
         </div>
       </motion.div>

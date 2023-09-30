@@ -3,7 +3,7 @@ import GoBack from "@/components/GoBack"
 import CardsWrapper from "@/components/CardsWrapper"
 
 async function getProjects() {
-  const res = await fetch('https://www.demetriomontalto.it/api/projects', { next: { revalidate: 3600 } })
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`, { next: { revalidate: 300 } })
  
   if (!res.ok) {
     throw new Error('failed to fetch data')
@@ -22,7 +22,7 @@ export default async function Portfolio() {
         <h1 className="font-bold">progetti</h1>
         <span>⚠️ questa pagina non è ancora completa, ritorna tra un po&apos; di tempo per vedere tutti i progetti a cui ho lavorato ⚠️</span>
 
-        <CardsWrapper projects={projects.data} />
+        <CardsWrapper projects={projects.data.reverse()} />
       </Container>
     </main>
   )

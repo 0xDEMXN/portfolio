@@ -11,6 +11,14 @@ export async function GET() {
       image: "/sum.png",
       link: "https://www.wearesum.eu/",
     },
+    {
+      id: 100,
+      slug: "porfolio",
+      title: "Portfolio",
+      excerpt: "Il mio porfolio personale, dove potrai trovare i miei progetti più recenti.",
+      content: "Il mio porfolio personale, dove potrai trovare i miei progetti più recenti. Puoi visualizzare il codice sorgente di questo sito web su GitHub!",
+      image: "/portfolio.jpg",
+    },
   ]
  
   return Response.json({ data })

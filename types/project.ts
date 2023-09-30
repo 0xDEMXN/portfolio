@@ -5,5 +5,5 @@ export type Project = {
   excerpt: string
   content: string
   image: string
-  link: string
+  link?: string
 }

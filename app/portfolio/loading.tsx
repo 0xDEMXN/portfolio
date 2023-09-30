@@ -2,7 +2,6 @@ import Container from "@/components/Container"
 import GoBack from "@/components/GoBack"
 
 export default async function Loading() {
-
   return (
     <main>
       <Container>
