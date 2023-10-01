@@ -1,8 +1,7 @@
 .card {
   border: 2px solid var(--foreground-color);
   margin-bottom: 10px;
-  cursor: url('/popup-cursor.png') 50 50, auto;
-  caret-color: var(--foreground-color);
+  cursor: pointer;
   background-color: var(--background-color);
   box-shadow: 6px 6px var(--foreground-color);
 
