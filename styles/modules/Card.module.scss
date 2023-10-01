@@ -1,12 +1,13 @@
 .card {
-  border: 2px solid black;
+  border: 2px solid var(--foreground-color);
   margin-bottom: 10px;
   cursor: url('/popup-cursor.png') 50 50, auto;
-  background-color: #fff;
-  box-shadow: 6px 6px #000;
+  caret-color: var(--foreground-color);
+  background-color: var(--background-color);
+  box-shadow: 6px 6px var(--foreground-color);
 
   &:hover {
-    box-shadow: 7px 7px #000;
+    box-shadow: 7px 7px var(--foreground-color);
     margin: -1px 1px 11px -1px;
   }
 

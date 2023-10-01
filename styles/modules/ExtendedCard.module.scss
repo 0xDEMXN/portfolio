@@ -1,7 +1,7 @@
 .card {
-  border: 2px solid black;
-  box-shadow: 6px 6px #000;
-  background-color: #fff;
+  border: 2px solid var(--foreground-color);
+  box-shadow: 6px 6px var(--foreground-color);
+  background-color: var(--background-color);
   position: relative;
 
   img {
@@ -27,5 +27,6 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+    color: #000;
   }
 }

@@ -4,6 +4,8 @@ import { Kanit } from 'next/font/google'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
+import Providers from '@/lib/providers'
+import ThemeSwitch from '@/components/ThemeSwitch'
 
 const kanit =  Kanit({
   weight: ['400', '700'],
@@ -24,7 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html className={kanit.className} lang="en">
-      <body>{children}</body>
+      <Providers>
+        <body>
+          <ThemeSwitch />
+          {children}
+        </body>
+      </Providers>
     </html>
   )
 }

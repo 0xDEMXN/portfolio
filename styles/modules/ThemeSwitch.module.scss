@@ -1,0 +1,26 @@
+.themeSwitch {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+  
+  &:after {
+    content: "";
+    height: 2px;
+    background: var(--foreground-color);
+    background: linear-gradient(90deg, var(--foreground-color) 0%, var(--foreground-color) 50%, rgba(0,0,0,0) 50%);
+    background-repeat: repeat-x;
+    background-size: 7px;
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover:after {
+    width: 0;
+  }
+}

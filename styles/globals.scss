@@ -4,8 +4,23 @@
 
 @import './resets';
 
+:root {
+  --foreground-color: #121212;
+  --background-color: #fff;
+}
+
+[data-theme="dark"] {
+    --foreground-color: #fff;
+    --background-color: #121212;
+}
+
 html, body {
   height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
 }
 
 h1 {
@@ -20,8 +35,8 @@ a {
   &:after {
     content: "";
     height: 2px;
-    background: #000;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 50%);
+    background: var(--foreground-color);
+    background: linear-gradient(90deg, var(--foreground-color) 0%, var(--foreground-color) 50%, rgba(0,0,0,0) 50%);
     background-repeat: repeat-x;
     background-size: 7px;
     width: 100%;
