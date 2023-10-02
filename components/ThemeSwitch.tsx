@@ -12,9 +12,9 @@ const ThemeSwitch = () => {
   const toSet = resolvedTheme === 'dark' ? 'light' : 'dark'
 
   return (
-    <>
-        <span className={styles.themeSwitch} onClick={() => setTheme(toSet)}>{toSet} mode</span>
-    </>
+    <div className={styles.themeSwitchWrapper} onClick={() => setTheme(toSet)}>
+      <span className={styles.themeSwitch}>{toSet} mode</span>
+    </div>
   )
 }
 

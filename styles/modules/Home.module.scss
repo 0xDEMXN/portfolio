@@ -12,4 +12,11 @@
   .enterButton {
     font-size: 1.5rem;
   }
+
+  .stack {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2rem;
+  }
 }
