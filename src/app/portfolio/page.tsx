@@ -3,7 +3,7 @@ import GoBack from "@/components/GoBack"
 import CardsWrapper from "@/components/CardsWrapper"
 
 async function getProjects() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`, { next: { revalidate: 300 } })
+  const res = await fetch(`${process.env.PROJECTS_API_URL}/projects`, { next: { revalidate: 300 } })
  
   if (!res.ok) {
     throw new Error('failed to fetch data')
