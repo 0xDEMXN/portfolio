@@ -7,9 +7,16 @@ const Button = (
   { children: React.ReactNode, path: string, className?: string }
 ) => {
   const router = useRouter()
+  
+  const handleClick = () => { router.push(path) }
+  const handleMouseEnter = () => { router.prefetch(path); console.log("prefetching") }
 
   return (
-    <button className={`${styles.button} ${className}`} onClick={() => router.push(path)}>
+    <button 
+      className={`${styles.button} ${className}`} 
+      onClick={handleClick} 
+      onMouseEnter={handleMouseEnter}
+    >
       { children }
     </button>
   )
